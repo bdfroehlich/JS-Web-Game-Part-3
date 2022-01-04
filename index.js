@@ -8,6 +8,7 @@ function move(image){
 
     return {
         to: moveToCoordinates
+        // returning an object with the property "to" and the function moveToCoordinates
     }
 }
 
@@ -17,6 +18,7 @@ function newImage(url){
     image.style.position = 'fixed'
     document.body.append(image)
     return image
+    // returns image so we can use it in the move function as an input
 }
 
 // let greenCharacter = newImage('assets/green-character.gif')
